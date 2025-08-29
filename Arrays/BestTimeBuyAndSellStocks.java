@@ -1,15 +1,17 @@
 // package Arrays;
 
 public class BestTimeBuyAndSellStocks {
-
     public static int findMaxProfit(int[] arr) {
-        int ans = 0, minSoFar = arr[0];
+        int ans = 0, currentProfit = 0;
+
+        int minSoFar = arr[0];
+
         for (int i = 1; i < arr.length; i++) {
-            int profit = arr[i] - minSoFar;
-            if (profit > ans) {
-                ans = profit;
-            }
-            minSoFar = Math.min(arr[i], minSoFar);
+            currentProfit = arr[i] - minSoFar;
+
+            ans = Math.max(ans, currentProfit);
+
+            minSoFar = Math.min(minSoFar, arr[i]);
         }
         return ans;
     }
