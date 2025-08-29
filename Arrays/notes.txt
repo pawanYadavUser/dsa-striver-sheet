@@ -1,0 +1,36 @@
+1. 🔹 Kadane’s Algorithm Intuition
+Keep a running sum (currentSum) of the subarray.
+If currentSum becomes negative, reset it to 0 (because starting fresh is better).
+Keep track of the maximum sum encountered so far (maxSum).
+
+🔹 Algorithm (Step by Step)
+Initialize:
+maxSum = -∞   (or first element of array)
+currentSum = 0
+
+Traverse the array:
+Add current element to currentSum
+Update maxSum = max(maxSum, currentSum)
+If currentSum < 0, reset currentSum = 0
+Return maxSum
+
+Time & Space Complexity
+Time: O(n) → Only one traversal
+Space: O(1) → Constant extra space
+
+track the start and end indices of the maximum sum subarray.
+🔹 Idea
+Keep a temporary start index whenever we reset currentSum.
+When we update maxSum, we also update the final startIndex and endIndex.
+
+🔹 Problem: All Elements Negative
+Standard Kadane’s Algorithm resets currentSum to 0 whenever it drops below 0.
+👉 But if the entire array is negative, it will return 0 (wrong), 
+because the best subarray is actually the least negative element.
+
+🔹 Fix for Negative Numbers
+Initialize maxSum to the first element, and don’t reset currentSum to 0 blindly.
+Instead:
+Use currentSum = Math.max(arr[i], currentSum + arr[i])
+Update maxSum = Math.max(maxSum, currentSum)
+This way, even if all numbers are negative, the algorithm picks the largest (least negative).
