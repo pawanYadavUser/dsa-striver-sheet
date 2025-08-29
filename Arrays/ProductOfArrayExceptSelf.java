@@ -30,6 +30,19 @@ public class ProductOfArrayExceptSelf {
 
     public static void main(String[] args) {
         int[] arr = { 1, 2, 3, 4 };
+
+        // left product array:
+        // ip: {1,2,3,4}
+        // {1,1,2,6}
+
+        // right product array
+        // ip: {1,2,3,4}
+        // {24,12,4,1}
+
+        // ans
+        // left : {1,1,2,6}
+        // right: {24,12,4,1}
+        // ans : {24, 12, 8, 6}
         System.out.println("product arr except self: " + Arrays.toString(productExceptSelf(arr)));
         int[] arr2 = { -1, 1, 0, -3, 3 };
         System.out.println("product arr except self: " + Arrays.toString(productExceptSelf(arr2)));
