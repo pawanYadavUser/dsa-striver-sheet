@@ -14,20 +14,18 @@ public class MaxProductSubArray {
             if (arr[i] != 0) {
                 currentProduct *= arr[i];
                 ans = Math.max(ans, currentProduct);
-
+                // // dont dare to put the condition of ans = Math.max(ans, currentProduct);
+                // // outside
+                // // else you will misse the zero value edge case.
+                // // the 2nd array
             } else {
+                // detect 0 in between the product, so have to reset the value of currentProduct
                 currentProduct = 1;
+
             }
-
-            // dont dare to put the condition of ans = Math.max(ans, currentProduct);
-            // outside
-            // else you will misse the zero value edge case.
-            //the 2nd array 
-
         }
 
         return ans;
-
     }
 
     public static void main(String[] args) {

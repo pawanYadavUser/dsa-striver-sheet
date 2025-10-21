@@ -1,9 +1,36 @@
 
 import java.util.Arrays;
 
-// package Arrays;
+/*
+ *Prefix–Suffix Product Approach (also called Left–Right Product Approach)
+How it works:
+Compute left[i] = product of all elements to the left of index i.
+Compute right[i] = product of all elements to the right of index i.
+Final result = left[i] * right[i].
+This avoids division and achieves O(n) time complexity with O(n) space.
+ */
 
 public class ProductOfArrayExceptSelf {
+
+    public static int[] productExceptSelfSpaceOptimised(int[] arr) {
+        int size = arr.length;
+        int[] result = new int[size];
+
+        result[0] = 1;
+
+        for (int i = 1; i < size; i++) {
+            result[i] = result[i - 1] * arr[i - 1];
+        }
+        int right = 1;
+
+        for (int j = size - 1; j >= 0; j--) {
+            result[j] *= right;
+            right *= arr[j];
+        }
+
+        return result;
+    }
+
     public static int[] productExceptSelf(int[] arr) {
         int size = arr.length;
         int[] left = new int[size];
@@ -46,6 +73,8 @@ public class ProductOfArrayExceptSelf {
         System.out.println("product arr except self: " + Arrays.toString(productExceptSelf(arr)));
         int[] arr2 = { -1, 1, 0, -3, 3 };
         System.out.println("product arr except self: " + Arrays.toString(productExceptSelf(arr2)));
+        System.out.println("product arr except self: " + Arrays.toString(productExceptSelfSpaceOptimised(arr)));
+        System.out.println("product arr except self: " + Arrays.toString(productExceptSelfSpaceOptimised(arr2)));
     }
 
 }
