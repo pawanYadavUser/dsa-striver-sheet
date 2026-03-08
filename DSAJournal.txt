@@ -1,0 +1,11 @@
+21/10/2025
+
+1. KClosestPointsToOrigin
+concept :- QuickSelect / QuickSort (Partially)
+Key Idea :- 
+Partition the array containing position points in such a way so that
+pivot becomes the kth closest point from origin.
++
+StoreIndex + Swapping concept.
+
+

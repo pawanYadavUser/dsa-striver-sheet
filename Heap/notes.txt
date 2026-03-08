@@ -1,0 +1,4 @@
+1. Heap theory!
+https://www.geeksforgeeks.org/java/priority-queue-in-java/
+
+https://takeuforward.org/heap/binary-heap-implementation/

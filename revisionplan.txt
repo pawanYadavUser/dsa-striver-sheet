@@ -1,0 +1,55 @@
+🧠 Why You Forget
+You forget DSA problems not because you’re bad at it — it’s because:
+You only solved them once (short-term memory).
+You didn’t revisit or explain them later (no reinforcement).
+You learned patterns implicitly but didn’t label them (so your brain can’t recall them easily).
+
+✅ The Right Way to Retain DSA for Interviews
+1. Use a “Pattern-Based Revision System”
+Instead of remembering 500 problems, remember patterns.
+For example:
+Two-pointer
+Sliding window
+Binary search on answer
+Backtracking
+Graph traversal (BFS/DFS)
+Heap/Priority Queue
+Prefix/Suffix product
+Dynamic programming patterns (1D, 2D, subset, etc.)
+🟩 When you solve or review a problem, tag it under a pattern.
+Next time you revise — revise by pattern, not by random order.
+
+2. Maintain a “DSA Journal” (short notes only)
+For every problem you solve:
+Write Problem name + Concept + Trick line + Time complexity
+Don’t copy the full code.
+Add 1–2 lines on why it worked.
+e.g.,
+🔹 Problem: Product of Array Except Self
+🔹 Pattern: Prefix-Suffix Product
+🔹 Key Idea: Multiply left[i-1] * right[i+1]
+🔹 Time: O(n), Space: O(1) with single pass trick
+When you revise, read this journal, not the whole problem.
+
+3. Use the “Active Recall + Spaced Repetition” Formula
+You don’t have to re-solve everything every time
+Here’s how you should revise:
+| Time After Solving | What To Do                                     |
+| ------------------ | ---------------------------------------------- |
+| 1 day later        | Recall concept from memory (without IDE).      |
+| 3 days later       | Try to write pseudo-code on paper.             |
+| 7 days later       | Solve again only if you couldn’t recall logic. |
+| 30 days later      | Just skim your DSA Journal / pattern notes.    |
+This keeps everything fresh without re-solving every time.
+
+4. Focus on Reconstructing, Not Remembering Code
+In interviews, you rarely need to recall code line by line —
+you just need to rebuild logic from the pattern.
+So while revising, train yourself to say:
+“Okay, this looks like a prefix-suffix problem. I’ll need two passes or a left/right array.”
+That’s enough for the brain to rebuild the solution during an interview.
+
+5. Practice “Verbal Revision” Once a Week
+Pick 5–10 random problems and explain their logic out loud —
+as if you’re teaching a friend or interviewer.
+Explaining forces active recall — it’s one of the strongest memory tools.
