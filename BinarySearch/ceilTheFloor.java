@@ -50,8 +50,47 @@ public class ceilTheFloor {
         return result;
     }
 
+    public static int[] getFloorAndCeil2(int[] arr, int length, int target) {
+        int[] result = { -1, -1 };
+        // find the floor
+        int start = 0, end = length - 1;
+        if (arr[0] > target) {
+            result[0] = -1;
+        } else {
+            while (start <= end) {
+                int mid = start + (end - start) / 2;
+                if (arr[mid] < target) {
+                    start = mid + 1;
+                } else {
+                    end = mid - 1;
+                }
+            }
+            result[0] = arr[end];
+        }
+
+        // find the floor
+        start = 0;
+        end = length - 1;
+        if (arr[end] < target) {
+            result[1] = -1;
+        } else {
+            while (start <= end) {
+                int mid = start + (end - start) / 2;
+                if (arr[mid] > target) {
+                    end = mid - 1;
+                } else {
+                    start = mid + 1;
+                }
+            }
+            result[1] = arr[start];
+        }
+
+        return result;
+    }
+
     public static void main(String[] args) {
         int[] arr = { 3, 4, 4, 7, 8, 10 };
+        System.out.println("Ceil and floor" + Arrays.toString(getFloorAndCeil2(arr, 6, 8)));
         System.out.println("Ceil and floor" + Arrays.toString(getFloorAndCeil(arr, 6, 8)));
 
     }
