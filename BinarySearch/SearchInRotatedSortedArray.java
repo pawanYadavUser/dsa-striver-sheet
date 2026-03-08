@@ -1,47 +1,51 @@
 public class SearchInRotatedSortedArray {
     public static void main(String[] args) {
-        int arr1[] = { 11, 22, 33, 44, 55, 67, 1, 2, 3, 4, 5, 6, 7 };
-        int target = 67;
-        int pivot = findPivot(arr1, arr1.length);
+        int[] arr = { 6, 7, 8, 9, 1, 2, 3, 4, 5 };
+        int pivot = findPivot(arr);
+        int result = 0, target = 4;
         if (pivot == -1) {
-            System.out.println("Target present at index: " + binarySearch(arr1, 0, arr1.length - 1, target));
-        } else if (arr1[pivot] == target) {
-            System.out.println("Target present at index : " + pivot);
-        } else if (arr1[0] < arr1[pivot]) {
-            System.out.println("Target present at index: " + binarySearch(arr1, 0, pivot - 1, target));
+            System.out.println("pivot is : " + binarySearch(arr, target, 0, arr.length - 1));
+
+        } else if (target == arr[pivot]) {
+            System.out.println("pivot is : " + pivot);
+        } else if (arr[0] < target) {
+            System.out.println("pivot is : " + binarySearch(arr, target, 0, pivot));
         } else {
-            System.out.println("Target present at index: " + binarySearch(arr1, pivot + 1, arr1.length - 1, target));
+            System.out.println("pivot is : " + binarySearch(arr, target, pivot + 1, arr.length - 1));
         }
+
     }
 
-    public static int findPivot(int arr[], int length) {
-        // define start n end limits
-        int start = 0, end = length - 1;
-        // do the binary search part!
+    public static int findPivot(int[] arr) {
+        int start = 0, end = arr.length - 1;
+
         while (start <= end) {
             int mid = start + (end - start) / 2;
-            // condition1
-            if (arr[mid - 1] > arr[mid] && start < mid) {
-                return mid - 1;
 
-            } else if (arr[mid + 1] < arr[mid] && mid < end) {
-                // condition2
+            if (mid < end && arr[mid] > arr[mid + 1]) {
+                // if the middile element is the pivot itself.
                 return mid;
+            } else if (start < mid && arr[mid - 1] > arr[mid]) {
+                // if the middle-1 element is the pivot itself.
+                return mid - 1;
             } else if (arr[start] >= arr[mid]) {
-                // condition3
+                // if start element is greater than middle element, that means, all elements
+                // after mid till end will be less than start
+                // as the array is sorted
                 end = mid - 1;
             } else {
-                // condition4
+                // if start element is less than the middle element, that means there are
+                // elements beyond mid, which can be greater too.
+                // and pivot is always the greatest element in the array
                 start = mid + 1;
             }
         }
         return -1;
     }
 
-    public static int binarySearch(int arr[], int start, int end, int target) {
+    public static int binarySearch(int[] arr, int target, int start, int end) {
         while (start <= end) {
             int mid = start + (end - start) / 2;
-
             if (arr[mid] == target) {
                 return mid;
             } else if (arr[mid] < target) {
@@ -52,4 +56,5 @@ public class SearchInRotatedSortedArray {
         }
         return -1;
     }
+
 }
