@@ -2,3 +2,13 @@
 https://www.geeksforgeeks.org/java/priority-queue-in-java/
 
 https://takeuforward.org/heap/binary-heap-implementation/
+
+2. The insertion algorithm is always:
+Put the new element at the end of the heap (to keep the tree complete).
+Compare it with its parent.
+If the heap property is violated:
+In a min-heap, swap while the child is smaller than the parent.
+In a max-heap, swap while the child is larger than the parent.
+Stop when the heap property is restored.
+
+This is why insertion takes O(log n) time in the worst case—the new element can travel from the bottom of the tree to the root.
