@@ -106,10 +106,10 @@ Don't attempt all 84.
 
 Do these 30 first:
 
-1. Two Sum
-2. Contains Duplicate
-3. Valid Anagram
-4. Group Anagrams
+1. Two Sum - bruteForce, hashtable
+2. Contains Duplicate - sorting + two pointer , hashtable
+3. Valid Anagram - frequency counter of alphabets
+4. Group Anagrams - 
 5. Longest Consecutive Sequence
 6. Top K Frequent Elements
 7. Best Time to Buy/Sell Stock
