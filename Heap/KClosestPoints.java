@@ -55,6 +55,7 @@ public class KClosestPoints {
         for (int[] p : points) {
             int dist = p[0] * p[0] + p[1] * p[1];
             maxHeap.offer(new int[] { dist, p[0], p[1] });
+            maxHeap.add(new int[] { dist, p[0], p[1] });
 
             // keep only k elements
             if (maxHeap.size() > k) {

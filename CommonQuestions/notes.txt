@@ -1,0 +1,142 @@
+Absolutely. Here is the Priority 1 + Priority 2 only list. I’d focus on these before your Publicis Sapient OA.
+
+🔴 Priority 1 — Must Do
+Arrays / HashMap / HashSet
+Two Sum
+Contains Duplicate
+Valid Anagram
+Group Anagrams
+Longest Consecutive Sequence
+Top K Frequent Elements
+Best Time to Buy and Sell Stock
+Maximum Subarray
+Product of Array Except Self
+Move Zeroes
+Majority Element
+Find the Missing Number
+Find All Duplicates in an Array
+Intersection of Two Arrays
+Subarray Sum Equals K
+Strings
+Longest Substring Without Repeating Characters
+First Non-Repeating Character
+Reverse String
+Valid Palindrome
+Longest Palindromic Substring
+Two Pointers
+Two Sum II — Sorted Array
+3Sum
+Container With Most Water
+Remove Duplicates from Sorted Array
+Move Zeroes
+Sliding Window
+Maximum Sum Subarray of Size K
+Longest Substring Without Repeating Characters
+Minimum Size Subarray Sum
+Longest Repeating Character Replacement
+Stack
+Valid Parentheses
+Min Stack
+Next Greater Element
+Daily Temperatures
+Evaluate Reverse Polish Notation
+Binary Search
+Binary Search
+Search in Rotated Sorted Array
+Find Minimum in Rotated Sorted Array
+Find First and Last Position of Element
+Koko Eating Bananas
+Linked List
+Reverse Linked List
+Merge Two Sorted Lists
+Linked List Cycle
+Remove Nth Node From End
+Middle of the Linked List
+🟠 Priority 2 — Important Patterns
+Heap / PriorityQueue
+Kth Largest Element in an Array
+Kth Smallest Element
+Top K Frequent Elements
+K Closest Points to Origin
+Merge K Sorted Lists
+Find Median from Data Stream
+Top K Frequent Words
+HashMap / Prefix Sum
+Subarray Sum Equals K
+Longest Subarray With Sum K
+Contiguous Array
+Count Number of Bad Pairs
+Isomorphic Strings
+Happy Number
+Longest Consecutive Sequence
+Sliding Window
+Minimum Window Substring
+Permutation in String
+Find All Anagrams in a String
+Maximum Consecutive Ones III
+Fruits Into Baskets
+Two Pointers
+3Sum
+4Sum
+Container With Most Water
+Trapping Rain Water
+Sort Colors
+Stack / Monotonic Stack
+Daily Temperatures
+Next Greater Element
+Next Greater Element II
+Largest Rectangle in Histogram
+Car Fleet
+Binary Search
+Search in Rotated Sorted Array
+Find Peak Element
+Koko Eating Bananas
+Capacity to Ship Packages Within D Days
+Median of Two Sorted Arrays
+Linked List
+Add Two Numbers
+Reorder List
+Remove Nth Node From End
+Intersection of Two Linked Lists
+Copy List With Random Pointer
+Merge K Sorted Lists
+⭐ If you're short on time
+
+Don't attempt all 84.
+
+Do these 30 first:
+
+1. Two Sum
+2. Contains Duplicate
+3. Valid Anagram
+4. Group Anagrams
+5. Longest Consecutive Sequence
+6. Top K Frequent Elements
+7. Best Time to Buy/Sell Stock
+8. Maximum Subarray
+9. Product of Array Except Self
+10. Subarray Sum Equals K
+
+11. Longest Substring Without Repeating Characters
+12. Valid Palindrome
+13. 3Sum
+14. Container With Most Water
+15. Maximum Sum Subarray of Size K
+
+16. Valid Parentheses
+17. Min Stack
+18. Next Greater Element
+19. Daily Temperatures
+20. Binary Search
+
+21. Search in Rotated Sorted Array
+22. Koko Eating Bananas
+23. Reverse Linked List
+24. Linked List Cycle
+25. Merge Two Sorted Lists
+
+26. Kth Largest Element
+27. K Closest Points to Origin
+28. Merge K Sorted Lists
+29. Minimum Window Substring
+30. Trapping Rain Water

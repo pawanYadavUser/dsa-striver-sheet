@@ -3,10 +3,9 @@ public class SearchInARotatedSortedArrayWithDuplicates {
         int[] arr = { 2, 2, 2, 2, 3, 4, 5, 6, 7, 1, 2, 2, 2, 2 };
 
         int pivot = findPivotWithDuplicates(arr);
-        int result = 0, target = 2;
+        int result = 0, target = 1;
         if (pivot == -1) {
             System.out.println("pivot is : " + binarySearch(arr, target, 0, arr.length - 1));
-
         } else if (target == arr[pivot]) {
             System.out.println("pivot is : " + pivot);
         } else if (arr[0] <= target) {
@@ -39,7 +38,7 @@ public class SearchInARotatedSortedArrayWithDuplicates {
                     return end - 1;
                 }
                 end--;
-            } else if (arr[start] > arr[mid] && mid > start) {
+            } else if (arr[start] > arr[mid]) {
                 // if start element is greater than middle element, that means, all elements
                 // after mid till end will be less than start
                 // as the array is sorted
